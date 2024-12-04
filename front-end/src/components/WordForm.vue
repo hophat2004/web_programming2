@@ -15,6 +15,13 @@
        </div>
        <input type="text" placeholder="Enter word..." v-model="word.english" />
      </div>
+
+     <div class="ui labeled input fluid">
+       <div class="ui label">
+         <i class="spain flag"></i> Spanish
+       </div>
+       <input type="text" placeholder="Enter word..." v-model="word.spanish" />
+     </div>
  
      <button class="positive ui button">Submit</button>
    </form>
@@ -30,7 +37,8 @@
        default: () => {
         return {
           english: '',
-          german: ''
+          german: '',
+          spanish: ''
         };
        }
      }
@@ -44,7 +52,8 @@
      onSubmit: function() {
        console.log(`English: ${this.word.english}`);
        console.log(`German: ${this.word.german}`);
-       if(this.word.german === '' || this.word.english === ''){
+       console.log(`Spanish: ${this.word.spanish}`);
+       if(this.word.german === '' || this.word.english === '' || this.word.spanish === ''){
         this.errorsPresent = true;
        }
        else{

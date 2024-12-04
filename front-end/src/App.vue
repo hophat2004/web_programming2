@@ -12,6 +12,9 @@
           <router-link to="/test" class="item">
             <i class="graduation cap icon"></i> Test
           </router-link>
+          <router-link to="/phat" class="item">
+            <i class="info circle icon"></i> Confirmation
+          </router-link>
         </div>
       </div>
     </div>
@@ -28,6 +31,8 @@
 </template>
 
 <script>
+import router from './router';
+
 export default {
   name: 'app'
 };
