@@ -16,7 +16,7 @@
       </div>
       <div class="ui labeled input fluid">
         <div class="ui label">
-          <i class="spanish flag"></i> Spanish
+          <i class="spain flag"></i> Spanish
         </div>
         <input type="text" readonly  :value="word.spanish"/>
       </div>
